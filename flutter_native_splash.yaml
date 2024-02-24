@@ -1,18 +1,16 @@
 flutter_native_splash:
 
-  color: "#FFFFFF"
-#  background_image: "assets/background.png"
+#  color: "#FFFFFF"
+  background_image: "assets/images/splash.png"
 
 
   image: assets/images/logo.png
-
-
   branding: assets/images/route blue.png
-
-
   branding_mode: bottom
   android: true
   ios: true
+  android_gravity: center
+  ios_content_mode: center
 
 
   # The color_dark, background_image_dark, image_dark, branding_dark are parameters that set the background
@@ -29,7 +27,7 @@ flutter_native_splash:
   # Please visit https://developer.android.com/guide/topics/ui/splash-screen
   # Following are specific parameters for Android 12+.
   android_12:
-    image:  assets/images/logo.png  # Replace with your specific image
+    image: assets/images/logo.png  # Replace with your specific image
     branding: assets/images/route blue.png
   # The image parameter sets the splash screen icon image.  If this parameter is not specified,
   # the app's launcher icon will be used instead.

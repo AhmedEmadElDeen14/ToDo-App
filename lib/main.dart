@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:todo_project/Themes/my_theme.dart';
 import 'package:todo_project/home.dart';
 import 'package:todo_project/splash.dart';
-import 'package:flutter_native_splash/flutter_native_splash.dart';
 
 
 void main() async {
@@ -18,11 +17,12 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: myTheme.lightTheme,
       darkTheme: myTheme.darkTheme,
-      initialRoute: SplashScreen.routeName,
-      routes: {
-        HomeScreen.routeName:(context) => HomeScreen(),
-        SplashScreen.routeName:(context) => SplashScreen(),
-      },
+      home: HomeScreen(),
+      // initialRoute: HomeScreen.routeName,
+      // routes: {
+      //   HomeScreen.routeName:(context) => HomeScreen(),
+      //   SplashScreen.routeName:(context) => SplashScreen(),
+      // },
     );
   }
 }
