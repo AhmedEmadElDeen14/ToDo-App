@@ -20,15 +20,7 @@ class HomeScreen extends StatelessWidget {
       body: SafeArea(
         child: Column(
           children: [
-            Container(
-              height: 80,
-              child: ListView(
-                scrollDirection: Axis.horizontal,
-                children: [
-                  DayWidget(date: "21", day: "Mon"),
-                ],
-              ),
-            ),
+
             // The main content with task cards
             Expanded(
               child: ListView(
